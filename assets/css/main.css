@@ -2040,7 +2040,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #CC0033;
+		background-color: #3c393a;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2083,7 +2083,7 @@ input, select, textarea {
 
 			#nav a:hover {
 				color: #fff !important;
-				background: #FF6666;
+				background: #6c6c6c;
 			}
 
 			#nav a.active {
