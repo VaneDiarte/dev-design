@@ -1863,6 +1863,10 @@ input, select, textarea {
 					background-color: #10BEF1;
 				}
 
+				ul.social li a.fa-behance {
+					background-color: #0062DB;
+				}
+
 				ul.social li a.fa-google {
 					background-color: #d44638;
 				}
@@ -1894,6 +1898,7 @@ input, select, textarea {
 					ul.social li a:hover:before {
 						background-color: transparent;
 					}
+				
 
 /* Actions */
 
@@ -1978,7 +1983,7 @@ input, select, textarea {
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			color: #9966FF;
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
@@ -1987,6 +1992,24 @@ input, select, textarea {
 			.icon.featured:before {
 				font-size: 6em;
 			}
+
+		.icon-wordpress {
+    		color: #9966FF;
+			display: block;
+			margin: 0 0 0.3em 0;
+			cursor: default;
+			font-size: 6em;
+		}
+
+		.icon-palette {
+    		color: #9966FF;
+			display: block;
+			margin: 0 0 0.3em 0;
+			cursor: default;
+			font-size: 6em;
+		}
+	
+		
 
 /* Wrappers */
 
