@@ -114,8 +114,8 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<article class="box style2">
 							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-							<h3><a href="#">Magna feugiat</a></h3>
-							<p>Ornare nulla proin odio consequat.</p>
+							<h3><a href="#">Notion Workshops</a></h3>
+							<p>These workshops were given at Penguin Academy in 2023</p>
 						</article>
 					</div>
 					<div class="col-4 col-6-medium col-12-small">
@@ -221,15 +221,29 @@
 
 			<script>
 				$(document).ready(function() {
+					// Función para abrir la imagen
 					$(".image.featured").click(function(e) {
 						e.preventDefault();
 						var imgSrc = $(this).find("img").attr("src");
 						$(".overlay-content").html('<span class="close-btn">&times;</span><img src="' + imgSrc + '">');
 						$(".overlay").fadeIn();
 					});
-
-					$(document).on("click", ".close-btn", function() {
+			
+					// Función para cerrar la imagen
+					$(document).on("click", ".close-btn, .overlay", function() {
 						$(".overlay").fadeOut();
+					});
+			
+					// Función para evitar el cierre cuando se toca la imagen
+					$(document).on("click", ".overlay-content", function(e) {
+						e.stopPropagation(); // Evita que el evento se propague al contenedor .overlay
+					});
+			
+					// Función para cerrar la imagen al tocar fuera de ella en dispositivos móviles
+					$(document).on("touchstart", function(e) {
+						if (!$(e.target).closest('.overlay-content').length && !$(e.target).closest('.image.featured').length) {
+							$(".overlay").fadeOut();
+						}
 					});
 				});
 			</script>
