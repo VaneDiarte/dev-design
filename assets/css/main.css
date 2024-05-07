@@ -121,6 +121,15 @@ input, select, textarea {
 		a img {
 			border: 0;
 		}
+	
+	.enlace-especial {
+		-moz-transition: color .2s ease-in-out;
+		-webkit-transition: color .2s ease-in-out;
+		-ms-transition: color .2s ease-in-out;
+		transition: color .2s ease-in-out;
+		color: #9374b1;
+		text-decoration: underline;
+	}
 
 	b, strong {
 		font-weight: 600;
@@ -2008,7 +2017,21 @@ input, select, textarea {
 			cursor: default;
 			font-size: 6em;
 		}
-	
+
+		.icon-user {
+    		color: #9966FF;
+			display: block;
+			margin: 0 0 0.3em 0;
+			cursor: default;
+			font-size: 6em;
+		}
+		.icon-pen {
+    		color: #9966FF;
+			display: block;
+			margin: 0 0 0.3em 0;
+			cursor: default;
+			font-size: 6em;
+		}
 		
 
 /* Wrappers */
