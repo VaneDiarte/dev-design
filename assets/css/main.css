@@ -230,6 +230,10 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
+	.tools {
+		padding-top: 2.5em;
+	}
+
 /* Container */
 
 	.container {
@@ -1532,7 +1536,6 @@ input, select, textarea {
 		-webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		-ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-		-webkit-appearance: none;
 		display: block;
 		border: 0;
 		padding: 0.75em;
@@ -1652,6 +1655,14 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
+		.image.featured img {
+			transition: transform 0.3s ease; /* Agrega una transición suave */
+		}
+	
+			.image.featured img:hover {
+				transform: scale(1.02); /* Hace que la imagen se agrande un 10% al colocar el cursor sobre ella */
+		}	
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
@@ -1666,6 +1677,8 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+			
+		
 
 /* Button */
 
@@ -1682,7 +1695,6 @@ input, select, textarea {
 		-webkit-transition: background-color .2s ease-in-out;
 		-ms-transition: background-color .2s ease-in-out;
 		transition: background-color .2s ease-in-out;
-		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
 		color: #fff !important;
@@ -1954,6 +1966,12 @@ input, select, textarea {
 			margin: -4em 0 4em -4em;
 			width: auto;
 		}
+		.box.style3 {
+			padding: 3em 2em 3.5em 2em;
+			border-radius: 1em;
+		}
+
+
 .overlay {
 				display: none;
 				position: fixed;
@@ -1978,6 +1996,10 @@ input, select, textarea {
 				max-height: 90%;
 				margin: auto;
 				display: block;
+				transition: transform 0.3s ease; /* Agrega una transición suave */
+			}
+			.overlay img:hover {
+				transform: scale(1.1); /* Hace que la imagen se agrande un 10% al colocar el cursor sobre ella */
 			}
 
 			.close-btn {
@@ -1988,6 +2010,7 @@ input, select, textarea {
 				cursor: pointer;
 				color: #fff;
 			}
+			
 /* Icons */
 
 	.icon {
@@ -2065,6 +2088,11 @@ input, select, textarea {
 			cursor: default;
 			font-size: 6em;
 		}
+
+		.icon-small {
+			font-size: 2em; 
+			color: #9966FF; 
+		  }
 		
 
 /* Wrappers */
